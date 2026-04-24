@@ -564,6 +564,7 @@ SplashBltCanvas (
 EFI_STATUS
 SplashDisplay (
   IN UINT8*  RawGifData,
+  IN UINTN   DataLength,
   IN UINT32  LoopCount
   )
 {
@@ -575,7 +576,7 @@ SplashDisplay (
   GIF_DECODER  Gif;
   mm_fill_memory ((UINT8 *)&Gif, sizeof (Gif), 0);
 
-  EFI_STATUS  Status = GifOpen (&Gif, splash_gif_data, SPLASH_GIF_SIZE);
+  EFI_STATUS  Status = GifOpen (&Gif, RawGifData, DataLength);
   if (Status != EFI_SUCCESS) {
     return Status;
   }
