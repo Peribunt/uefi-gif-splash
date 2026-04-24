@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __SPLASH_H__
+#define __SPLASH_H__
+
 #include <Library/UefiLib.h>
 #include <Protocol/GraphicsOutput.h>
 
@@ -15,3 +17,5 @@ SplashDisplay (
   IN UINT8*  RawGifData,
   IN UINT32  LoopCount
   );
+
+#endif
