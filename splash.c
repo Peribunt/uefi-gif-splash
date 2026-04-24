@@ -1,5 +1,4 @@
 #include "splash.h"
-#include "splash_data.h"
 #include "../memory_manager/memory_manager.h"
 #include <Library/UefiBootServicesTableLib.h>
 
