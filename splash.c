@@ -564,7 +564,8 @@ SplashBltCanvas (
 
 EFI_STATUS
 SplashDisplay (
-  UINT32  LoopCount
+  IN UINT8*  RawGifData,
+  IN UINT32  LoopCount
   )
 {
   EFI_GRAPHICS_OUTPUT_PROTOCOL  *Gop = SplashGetGop ();
