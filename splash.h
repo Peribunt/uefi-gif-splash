@@ -15,6 +15,7 @@
 EFI_STATUS
 SplashDisplay (
   IN UINT8*  RawGifData,
+  IN UINTN   DataLength,
   IN UINT32  LoopCount
   );
 
